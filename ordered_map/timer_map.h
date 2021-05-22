@@ -19,6 +19,10 @@ public:
     {
         m_expire_callback = expire_callback;
     }
+    /*
+    c++编译模版类时要分为两阶段查找，第一阶段检查与模板参数无关的变量/函数，找不到则报错；第二阶段在实例化模板时，再对依赖模板参数的变量/函数进行检查。
+    如果子类也是模板类，第一阶段检查独立的变量/函数时，如果调用父类变量/函数不显式加this，会被认为是独立变量/函数，但此时还未示例化父类，在类中找不到定义，故报错
+    */
     void CheckExpire(void *this_pointer, const ORDERED_KEY &expire_key)
     {
         if (NULL == m_expire_callback)
