@@ -1,0 +1,10 @@
+[color]
+        status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+    ui = true
+[alias]
+    co = checkout
+    br = branch -vv
+    st = status
