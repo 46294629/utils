@@ -1,0 +1,4 @@
+vim中列出函数列表的步骤：
+1.通过Exuberant Ctags列出tags：https://blog.csdn.net/dream2009gd/article/details/44102227， https://blog.easwy.com/archives/advanced-vim-skills-use-ctags-tag-file/
+2.使用taglist插件：https://blog.csdn.net/dream2009gd/article/details/44102227， https://blog.easwy.com/archives/advanced-vim-skills-taglist-plugin/
+3.修改~/.vimrc
